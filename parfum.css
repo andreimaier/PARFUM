@@ -98,7 +98,7 @@ button:hover {
     .container {
         flex-direction: column;
         width: 343px;
-        margin: 31px auto;
+        margin: 29px auto;
     }
  .picture {
         content: url(./images/image-product-mobile.jpg);
