@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+.flex {
+    display: flex;
+}
+
+
+.container {
+    
+    width: 600px;
+    height: 450px;
+    margin: 175px 420px auto auto;
+    border-radius: 20px;
+}
+.picture {
+    content: url(/FrontEndMentor/perfume/product-preview-card-component-main/images/image-product-desktop.jpg);
+    width: 300px;
+    height: 450px;
+    border-radius: 10px 0 0 10px;  
+}
+
+.text-section {
+    font-family: "Montserrat";
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+}
+.top-text {
+    font-family: "Montserrat";
+    text-transform:uppercase;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+}
+.title-text {
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces";
+    text-transform: capitalize;
+    padding-block: 25px;
+    padding-inline: 1px;
+}
+.description-text {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;   
+    line-height: 23px;
+}
+.price {
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 20px;
+}
+.large {
+    font-size: 30px;
+    font-family: "Fraunces";
+    color: hsl(158, 36%, 37%);
+}
+.small {
+    font-family: "Montserrat";
+    text-decoration: line-through;
+    font-size: small;
+    padding-right: 40px;
+    color: hsl(228, 12%, 48%);
+   
+}
+
+button {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+    padding-inline: 20px;
+    padding-block: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart {
+    padding-right: 10px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: hsl(157, 36%, 23%);;
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        flex-direction: column;
+        width: 343px;
+        margin: 30px auto;
+    }
+ .picture {
+        content: url(/FrontEndMentor/perfume/product-preview-card-component-main/images/image-product-mobile.jpg);
+        width: 343px;
+        border-radius: 10px 10px 0 0;
+    } 
+    .text-section {
+        border-radius: 0 0 10px 10px;
+    }
+    .small {
+        padding-right: 100px;
+    }
+}
+
+
+
+
+
